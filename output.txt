@@ -1,0 +1,122 @@
+Samuel Vossen, 5.1.2023, Assignment 8
+Initializing buffers
+Expected values: 10 510 size buffers, Status Ok
+Actual: 
+0 6 size buffers
+0 14 size buffers
+0 30 size buffers
+0 62 size buffers
+0 126 size buffers
+0 254 size buffers
+10 510 size buffers
+Status: 
+Ok
+
+Requesting a 510 size buffer
+Buffer address: 2
+Expected values: 9 510 size buffers, Status Unknown
+Actual: 
+0 6 size buffers
+0 14 size buffers
+0 30 size buffers
+0 62 size buffers
+0 126 size buffers
+0 254 size buffers
+9 510 size buffers
+Status: 
+Unknown
+
+Returning the 510 size buffer
+Expected values: 10 510 size buffers, Status Ok
+Actual: 
+0 6 size buffers
+0 14 size buffers
+0 30 size buffers
+0 62 size buffers
+0 126 size buffers
+0 254 size buffers
+10 510 size buffers
+Status: 
+Ok
+
+Requesting a non-existent buffer size
+Buffer address: -1
+Expected values: -1 (no buffer found), Status Ok
+Actual: 
+0 6 size buffers
+0 14 size buffers
+0 30 size buffers
+0 62 size buffers
+0 126 size buffers
+0 254 size buffers
+10 510 size buffers
+Status: 
+Ok
+
+Requesting all 510 size buffers
+Buffer address 1: 2
+Buffer address 2: 512
+Buffer address 3: 1022
+Buffer address 4: 1532
+Buffer address 5: 2042
+Buffer address 6: 2552
+Buffer address 7: 3062
+Buffer address 8: 3572
+Buffer address 9: 4082
+Buffer address 10: 4592
+Expected values: 0 510 size buffers, Status Tight
+Actual: 
+0 6 size buffers
+0 14 size buffers
+0 30 size buffers
+0 62 size buffers
+0 126 size buffers
+0 254 size buffers
+0 510 size buffers
+Status: 
+Tight
+
+Returning all 510 size buffers
+Expected values: 10 510 size buffers, Status Ok
+Actual: 
+0 6 size buffers
+0 14 size buffers
+0 30 size buffers
+0 62 size buffers
+0 126 size buffers
+0 254 size buffers
+10 510 size buffers
+Status: 
+Ok
+
+Requesting and returning buffers of different sizes
+Requesting buffer of size 50, address: -1
+Returning buffer of size 50, address: -1
+Status: Ok
+Requesting buffer of size 100, address: -1
+Returning buffer of size 100, address: -1
+Status: Ok
+Requesting buffer of size 150, address: -1
+Returning buffer of size 150, address: -1
+Status: Ok
+Requesting buffer of size 200, address: -1
+Returning buffer of size 200, address: -1
+Status: Ok
+Requesting buffer of size 250, address: -1
+Returning buffer of size 250, address: -1
+Status: Ok
+Requesting buffer of size 300, address: -1
+Returning buffer of size 300, address: -1
+Status: Ok
+Requesting buffer of size 350, address: -1
+Returning buffer of size 350, address: -1
+Status: Ok
+Requesting buffer of size 400, address: -1
+Returning buffer of size 400, address: -1
+Status: Ok
+Requesting buffer of size 450, address: -1
+Returning buffer of size 450, address: -1
+Status: Ok
+Requesting buffer of size 500, address: -1
+Returning buffer of size 500, address: -1
+Status: Ok
